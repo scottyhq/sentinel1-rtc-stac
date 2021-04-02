@@ -1,0 +1,168 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0-beta.2",
+    "id": "S1A_20180114_19TCH_ASC",
+    "properties": {
+        "providers": [
+            {
+                "name": "ESA",
+                "roles": [
+                    "producer",
+                    "processor",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/web/guest/home"
+            },
+            {
+                "name": "Indigo Ag Inc.",
+                "roles": [
+                    "processor",
+                    "licensor"
+                ],
+                "url": "https://registry.opendata.aws/sentinel-1-rtc-indigo"
+            }
+        ],
+        "constellation": "sentinel-1",
+        "platform": "sentinel-1a",
+        "instruments": [
+            "c-sar"
+        ],
+        "gsd": 20,
+        "start_datetime": "2018-01-14T22:42:47Z",
+        "end_datetime": "2018-01-14T22:43:37Z",
+        "created": "2021-04-02T06:47:32.445255Z",
+        "sentinel:mgrs": "19TCH",
+        "sentinel:utm_zone": "19",
+        "sentinel:latitude_band": "T",
+        "sentinel:grid_square": "CH",
+        "sentinel:product_ids": [
+            "S1A_IW_GRDH_1SDV_20180114T224312_20180114T224337_020157_02261B_1EF3",
+            "S1A_IW_GRDH_1SDV_20180114T224247_20180114T224312_020157_02261B_B7D9"
+        ],
+        "sentinel:data_coverage": "64.607",
+        "sar:frequency_band": "C",
+        "sar:center_frequency": 5.405,
+        "sar:observation_direction": "right",
+        "sar:instrument_mode": "IW",
+        "sar:product_type": "RTC",
+        "sar:polarizations": [
+            "VV",
+            "HH"
+        ],
+        "sar:resolution_range": 20.3,
+        "sar:resolution_azimuth": 22.6,
+        "sar:pixel_spacing_range": 10,
+        "sar:pixel_spacing_azimuth": 10,
+        "sar:looks_equivalent_number": 4.4,
+        "sar:looks_range": 5,
+        "sar:looks_azimuth": 1,
+        "sat:orbit_state": "ascending",
+        "sat:relative_orbit": 135,
+        "proj:epsg": 32619,
+        "proj:shape": [
+            5490,
+            5490
+        ],
+        "proj:transform": [
+            20.0,
+            0.0,
+            300000.0,
+            0.0,
+            -20.0,
+            4800000.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "datetime": "2018-01-14T22:43:12Z"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -70.63564,
+                    43.1382
+                ],
+                [
+                    -70.63564,
+                    43.13838
+                ],
+                [
+                    -70.6349,
+                    43.13839
+                ],
+                [
+                    -70.6349,
+                    43.13821
+                ],
+                [
+                    -70.63564,
+                    43.1382
+                ]
+            ]
+        ]
+    },
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.indigoag.com/forms/atlas-sentinel-license"
+        },
+        {
+            "rel": "collection",
+            "href": "../../../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "../../../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "gamma0_vv": {
+            "href": "https://sentinel-s1-rtc-indigo.s3.us-west-2.amazonaws.com/tiles/RTC/1/IW/19/T/CH/2018/S1A_20180114_19TCH_ASC/Gamma0_VV.tif",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Gamma0 VV backscatter",
+            "roles": [
+                "data",
+                "gamma0"
+            ]
+        },
+        "gamma0_vh": {
+            "href": "https://sentinel-s1-rtc-indigo.s3.us-west-2.amazonaws.com/tiles/RTC/1/IW/19/T/CH/2018/S1A_20180114_19TCH_ASC/Gamma0_VH.tif",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Gamma0 VH backscatter",
+            "roles": [
+                "data",
+                "gamma0"
+            ]
+        },
+        "incidence": {
+            "href": "https://sentinel-s1-rtc-indigo.s3.us-west-2.amazonaws.com/tiles/RTC/1/IW/19/T/CH/2018/S1A_20180114_19TCH_ASC/local_incident_angle.tif",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Local incidence angle",
+            "roles": [
+                "data",
+                "local-incidence-angle"
+            ]
+        }
+    },
+    "bbox": [
+        -71.46678,
+        42.33837,
+        -70.09541,
+        43.34744
+    ],
+    "stac_extensions": [
+        "sar",
+        "sat",
+        "projection"
+    ],
+    "collection": "sentinel1-rtc-aws"
+}

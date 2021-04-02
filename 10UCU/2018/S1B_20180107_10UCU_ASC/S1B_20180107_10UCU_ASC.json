@@ -1,0 +1,211 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0-beta.2",
+    "id": "S1B_20180107_10UCU_ASC",
+    "properties": {
+        "providers": [
+            {
+                "name": "ESA",
+                "roles": [
+                    "producer",
+                    "processor",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/web/guest/home"
+            },
+            {
+                "name": "Indigo Ag Inc.",
+                "roles": [
+                    "processor",
+                    "licensor"
+                ],
+                "url": "https://registry.opendata.aws/sentinel-1-rtc-indigo"
+            }
+        ],
+        "constellation": "sentinel-1",
+        "platform": "sentinel-1b",
+        "instruments": [
+            "c-sar"
+        ],
+        "gsd": 20,
+        "start_datetime": "2018-01-07T02:17:50Z",
+        "end_datetime": "2018-01-07T02:18:15Z",
+        "created": "2021-04-02T06:44:07.926593Z",
+        "sentinel:mgrs": "10UCU",
+        "sentinel:utm_zone": "10",
+        "sentinel:latitude_band": "U",
+        "sentinel:grid_square": "CU",
+        "sentinel:product_ids": [
+            "S1B_IW_GRDH_1SDV_20180107T021750_20180107T021815_009059_010315_861C"
+        ],
+        "sentinel:data_coverage": "21.011",
+        "sar:frequency_band": "C",
+        "sar:center_frequency": 5.405,
+        "sar:observation_direction": "right",
+        "sar:instrument_mode": "IW",
+        "sar:product_type": "RTC",
+        "sar:polarizations": [
+            "VV",
+            "HH"
+        ],
+        "sar:resolution_range": 20.3,
+        "sar:resolution_azimuth": 22.6,
+        "sar:pixel_spacing_range": 10,
+        "sar:pixel_spacing_azimuth": 10,
+        "sar:looks_equivalent_number": 4.4,
+        "sar:looks_range": 5,
+        "sar:looks_azimuth": 1,
+        "sat:orbit_state": "ascending",
+        "sat:relative_orbit": 108,
+        "proj:epsg": 32610,
+        "proj:shape": [
+            5490,
+            5490
+        ],
+        "proj:transform": [
+            20.0,
+            0.0,
+            300000.0,
+            0.0,
+            -20.0,
+            5400000.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "datetime": "2018-01-07T02:18:02.500000Z"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -125.67882,
+                    48.00006
+                ],
+                [
+                    -125.68124,
+                    48.00019
+                ],
+                [
+                    -125.71936,
+                    48.72091
+                ],
+                [
+                    -125.36102,
+                    48.72882
+                ],
+                [
+                    -125.36072,
+                    48.72829
+                ],
+                [
+                    -125.35941,
+                    48.72345
+                ],
+                [
+                    -125.27609,
+                    48.36488
+                ],
+                [
+                    -125.20366,
+                    48.04994
+                ],
+                [
+                    -125.19769,
+                    48.02324
+                ],
+                [
+                    -125.19537,
+                    48.01285
+                ],
+                [
+                    -125.19438,
+                    48.00837
+                ],
+                [
+                    -125.19337,
+                    48.00371
+                ],
+                [
+                    -125.19271,
+                    48.00066
+                ],
+                [
+                    -125.19269,
+                    48.00012
+                ],
+                [
+                    -125.19563,
+                    48.00006
+                ],
+                [
+                    -125.67882,
+                    48.00006
+                ]
+            ]
+        ]
+    },
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.indigoag.com/forms/atlas-sentinel-license"
+        },
+        {
+            "rel": "collection",
+            "href": "../../../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "../../../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "gamma0_vv": {
+            "href": "https://sentinel-s1-rtc-indigo.s3.us-west-2.amazonaws.com/tiles/RTC/1/IW/10/U/CU/2018/S1B_20180107_10UCU_ASC/Gamma0_VV.tif",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Gamma0 VV backscatter",
+            "roles": [
+                "data",
+                "gamma0"
+            ]
+        },
+        "gamma0_vh": {
+            "href": "https://sentinel-s1-rtc-indigo.s3.us-west-2.amazonaws.com/tiles/RTC/1/IW/10/U/CU/2018/S1B_20180107_10UCU_ASC/Gamma0_VH.tif",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Gamma0 VH backscatter",
+            "roles": [
+                "data",
+                "gamma0"
+            ]
+        },
+        "incidence": {
+            "href": "https://sentinel-s1-rtc-indigo.s3.us-west-2.amazonaws.com/tiles/RTC/1/IW/10/U/CU/2018/S1B_20180107_10UCU_ASC/local_incident_angle.tif",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Local incidence angle",
+            "roles": [
+                "data",
+                "local-incidence-angle"
+            ]
+        }
+    },
+    "bbox": [
+        -125.71936,
+        47.73414,
+        -124.20363,
+        48.74648
+    ],
+    "stac_extensions": [
+        "sar",
+        "sat",
+        "projection"
+    ],
+    "collection": "sentinel1-rtc-aws"
+}

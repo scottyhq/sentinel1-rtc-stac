@@ -1,0 +1,32 @@
+{
+    "id": "2020",
+    "stac_version": "1.0.0-beta.2",
+    "description": "Catalog of items from 12SYJ with year of 2020",
+    "links": [
+        {
+            "rel": "root",
+            "href": "../../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20200831_12SYJ_DSC/S1A_20200831_12SYJ_DSC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20200907_12SYJ_DSC/S1A_20200907_12SYJ_DSC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20200912_12SYJ_DSC/S1A_20200912_12SYJ_DSC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        }
+    ]
+}

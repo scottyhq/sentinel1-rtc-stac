@@ -1,0 +1,32 @@
+{
+    "id": "2018",
+    "stac_version": "1.0.0-beta.2",
+    "description": "Catalog of items from 17RMJ with year of 2018",
+    "links": [
+        {
+            "rel": "root",
+            "href": "../../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20180101_17RMJ_ASC/S1A_20180101_17RMJ_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20180108_17RMJ_ASC/S1A_20180108_17RMJ_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20180113_17RMJ_ASC/S1A_20180113_17RMJ_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        }
+    ]
+}

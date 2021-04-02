@@ -1,0 +1,32 @@
+{
+    "id": "2017",
+    "stac_version": "1.0.0-beta.2",
+    "description": "Catalog of items from 15RUN with year of 2017",
+    "links": [
+        {
+            "rel": "root",
+            "href": "../../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20170101_15RUN_ASC/S1A_20170101_15RUN_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20170108_15RUN_ASC/S1A_20170108_15RUN_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20170113_15RUN_ASC/S1A_20170113_15RUN_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "2019",
+    "stac_version": "1.0.0-beta.2",
+    "description": "Catalog of items from 19TCH with year of 2019",
+    "links": [
+        {
+            "rel": "root",
+            "href": "../../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20190104_19TCH_ASC/S1A_20190104_19TCH_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20190109_19TCH_ASC/S1A_20190109_19TCH_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1A_20190116_19TCH_ASC/S1A_20190116_19TCH_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        }
+    ]
+}

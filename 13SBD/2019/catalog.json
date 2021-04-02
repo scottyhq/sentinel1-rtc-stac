@@ -1,0 +1,32 @@
+{
+    "id": "2019",
+    "stac_version": "1.0.0-beta.2",
+    "description": "Catalog of items from 13SBD with year of 2019",
+    "links": [
+        {
+            "rel": "root",
+            "href": "../../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1B_20190110_13SBD_ASC/S1B_20190110_13SBD_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1B_20190122_13SBD_ASC/S1B_20190122_13SBD_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./S1B_20190203_13SBD_ASC/S1B_20190203_13SBD_ASC.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        }
+    ]
+}

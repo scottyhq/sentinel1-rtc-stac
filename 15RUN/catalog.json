@@ -1,0 +1,47 @@
+{
+    "id": "15RUN",
+    "stac_version": "1.0.0-beta.2",
+    "description": "Catalog of items from sentinel1-rtc-aws with sentinel:mgrs of 15RUN",
+    "links": [
+        {
+            "rel": "root",
+            "href": "../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "child",
+            "href": "./2016/catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "child",
+            "href": "./2017/catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "child",
+            "href": "./2018/catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "child",
+            "href": "./2019/catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "child",
+            "href": "./2020/catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "child",
+            "href": "./2021/catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../collection.json",
+            "type": "application/json"
+        }
+    ]
+}

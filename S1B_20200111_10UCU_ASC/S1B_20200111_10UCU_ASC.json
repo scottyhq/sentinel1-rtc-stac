@@ -1,0 +1,196 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0-beta.2",
+    "id": "S1B_20200111_10UCU_ASC",
+    "properties": {
+        "providers": [
+            {
+                "name": "ESA",
+                "roles": [
+                    "producer",
+                    "processor",
+                    "licensor"
+                ],
+                "url": "https://earth.esa.int/web/guest/home"
+            },
+            {
+                "name": "Indigo Ag Inc.",
+                "roles": [
+                    "processor",
+                    "licensor"
+                ],
+                "url": "https://registry.opendata.aws/sentinel-1-rtc-indigo"
+            }
+        ],
+        "constellation": "sentinel-1",
+        "platform": "sentinel-1b",
+        "instruments": [
+            "c-sar"
+        ],
+        "gsd": 20,
+        "start_datetime": "2020-01-11T02:01:45Z",
+        "end_datetime": "2020-01-11T02:02:09Z",
+        "created": "2021-04-02T00:07:01.879967Z",
+        "sentinel:utm_zone": "10",
+        "sentinel:latitude_band": "U",
+        "sentinel:grid_square": "CU",
+        "sentinel:product_ids": [
+            "S1B_IW_GRDH_1SDV_20200111T020145_20200111T020209_019763_0255E0_E863"
+        ],
+        "sentinel:data_coverage": "24.295",
+        "sar:frequency_band": "C",
+        "sar:center_frequency": 5.405,
+        "sar:observation_direction": "right",
+        "sar:instrument_mode": "IW",
+        "sar:product_type": "RTC",
+        "sar:polarizations": [
+            "VV",
+            "HH"
+        ],
+        "sar:resolution_range": 20.3,
+        "sar:resolution_azimuth": 22.6,
+        "sar:pixel_spacing_range": 10,
+        "sar:pixel_spacing_azimuth": 10,
+        "sar:looks_equivalent_number": 4.4,
+        "sar:looks_range": 5,
+        "sar:looks_azimuth": 1,
+        "sat:orbit_state": "ascending",
+        "sat:relative_orbit": 137,
+        "proj:epsg": 32610,
+        "proj:shape": [
+            5490,
+            5490
+        ],
+        "proj:transform": [
+            20.0,
+            0.0,
+            300000.0,
+            0.0,
+            -20.0,
+            5400000.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "datetime": "2020-01-11T02:01:57Z"
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -124.43064,
+                    47.75625
+                ],
+                [
+                    -124.43092,
+                    47.75661
+                ],
+                [
+                    -124.45351,
+                    47.8301
+                ],
+                [
+                    -124.63348,
+                    48.42691
+                ],
+                [
+                    -124.64803,
+                    48.47529
+                ],
+                [
+                    -124.64894,
+                    48.47833
+                ],
+                [
+                    -124.64924,
+                    48.47941
+                ],
+                [
+                    -124.71614,
+                    48.7289
+                ],
+                [
+                    -124.71787,
+                    48.73985
+                ],
+                [
+                    -124.71788,
+                    48.74021
+                ],
+                [
+                    -124.22701,
+                    48.74648
+                ],
+                [
+                    -124.2036,
+                    47.75886
+                ],
+                [
+                    -124.20387,
+                    47.75885
+                ],
+                [
+                    -124.43064,
+                    47.75625
+                ]
+            ]
+        ]
+    },
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.indigoag.com/forms/atlas-sentinel-license"
+        },
+        {
+            "rel": "root",
+            "href": "../catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "gamma0_vv": {
+            "href": "https://sentinel-s1-rtc-indigo.s3.us-west-2.amazonaws.com/tiles/RTC/1/IW/10/U/CU/2020/S1B_20200111_10UCU_ASC/Gamma0_VV.tif",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Gamma0 VV backscatter",
+            "roles": [
+                "data",
+                "gamma0"
+            ]
+        },
+        "gamma0_vh": {
+            "href": "https://sentinel-s1-rtc-indigo.s3.us-west-2.amazonaws.com/tiles/RTC/1/IW/10/U/CU/2020/S1B_20200111_10UCU_ASC/Gamma0_VH.tif",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Gamma0 VH backscatter",
+            "roles": [
+                "data",
+                "gamma0"
+            ]
+        },
+        "incidence": {
+            "href": "https://sentinel-s1-rtc-indigo.s3.us-west-2.amazonaws.com/tiles/RTC/1/IW/10/U/CU/2020/S1B_20200111_10UCU_ASC/local_incident_angle.tif",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Local incidence angle",
+            "roles": [
+                "data",
+                "local-incidence-angle"
+            ]
+        }
+    },
+    "bbox": [
+        -125.71936,
+        47.73414,
+        -124.20363,
+        48.74648
+    ],
+    "stac_extensions": [
+        "sar",
+        "sat",
+        "projection"
+    ]
+}

@@ -3,6 +3,10 @@ name: STAC Browser
 
 on: workflow_dispatch
 
+env:
+  CATALOG_URL: "https://raw.githubusercontent.com/scottyhq/sentinel1-rtc-stac/main/collection.json"
+  TILE_SOURCE_TEMPLATE: "https://api.cogeo.xyz/cog/tiles/{z}/{x}/{y}?url={ASSET_HREF}&expression=sqrt(b1)&rescale=0,1"
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-20.04
@@ -12,25 +16,21 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: radiantearth/stac-browser
-        path: stac-browser
 
     - name: Install STAC Browser
       run: |
         npm install .
-        pwd
-        ls
 
     - name: Checkout STAC Repo
       uses: actions/checkout@v2
 
     - name: Build Website
       run: |
-        npm run --prefix ../stac-browser build -- --CATALOG_URL="collection.json"
-        tree ../stac-browser/dist
+        npm run build -- --CATALOG_URL=${{env.CATALOG_URL}} --TILE_SOURCE_TEMPLATE=${{env.TILE_SOURCE_TEMPLATE}}
 
-    # - name: Publish to GitHub Pages
-    #   uses: peaceiris/actions-gh-pages@v3
-    #   with:
-    #     personal_token: ${{ secrets.GH_PAT }}
-    #     publish_dir: ../stac-browser/dist/
-    #     publish_branch: gh-pages
+    - name: Publish to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        publish_branch: gh-pages

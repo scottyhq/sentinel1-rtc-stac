@@ -1,0 +1,25 @@
+# Deploy a STAC Browser website to github pages
+name: STAC Browser
+
+on: workflow_dispatch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install STAC Browser
+      npm install @radiantearth/stac-browser
+
+    - name: Build Website
+      run: |
+        npm run build -- --CATALOG_URL="collection.json"
+
+    - name: Publish to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GH_PAT }}
+        publish_dir: dist/
+        publish_branch: gh-pages

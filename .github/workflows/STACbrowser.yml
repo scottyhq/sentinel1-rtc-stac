@@ -6,7 +6,7 @@ on: workflow_dispatch
 env:
   CATALOG_URL: "https://raw.githubusercontent.com/${{ github.repository }}/main/collection.json"
   TILE_SOURCE_TEMPLATE: "https://api.cogeo.xyz/cog/tiles/{z}/{x}/{y}?url={ASSET_HREF}&expression=sqrt(b1)&rescale=0,1"
-  PATH_PREFIX: ${{ github.event.repository.name }}
+  PATH_PREFIX: "/${{ github.event.repository.name }}/"
 
 jobs:
   build-and-deploy:
@@ -24,9 +24,9 @@ jobs:
 
     - name: Build Website
       run: |
-        npm run build -- --CATALOG_URL="${{env.CATALOG_URL}}" \
-        --TILE_SOURCE_TEMPLATE="${{env.TILE_SOURCE_TEMPLATE}}" \
-        --PATH_PREFIX="${{env.PATH_PREFIX}}"
+        npm run build -- --CATALOG_URL="${{ env.CATALOG_URL }}" \
+        --TILE_SOURCE_TEMPLATE="${{ env.TILE_SOURCE_TEMPLATE }}" \
+        --PATH_PREFIX="${{ env.PATH_PREFIX }}"
 
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3

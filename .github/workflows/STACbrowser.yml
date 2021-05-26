@@ -6,21 +6,31 @@ on: workflow_dispatch
 jobs:
   build-and-deploy:
     runs-on: ubuntu-20.04
-
     steps:
-    - uses: actions/checkout@v2
+
+    - name: Checkout STAC Browser Source
+      uses: actions/checkout@v2
+      with:
+        repository: radiantearth/stac-browser
+        path: stac-browser
 
     - name: Install STAC Browser
       run: |
-        npm install @radiantearth/stac-browser
+        npm install .
+        pwd
+        ls
+
+    - name: Checkout STAC Repo
+      uses: actions/checkout@v2
 
     - name: Build Website
       run: |
-        npm run build -- --CATALOG_URL="collection.json"
+        npm run --prefix ../stac-browser build -- --CATALOG_URL="collection.json"
+        tree ../stac-browser/dist
 
-    - name: Publish to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        personal_token: ${{ secrets.GH_PAT }}
-        publish_dir: dist/
-        publish_branch: gh-pages
+    # - name: Publish to GitHub Pages
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     personal_token: ${{ secrets.GH_PAT }}
+    #     publish_dir: ../stac-browser/dist/
+    #     publish_branch: gh-pages

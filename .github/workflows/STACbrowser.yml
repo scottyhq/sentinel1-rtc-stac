@@ -21,12 +21,9 @@ jobs:
       run: |
         npm install .
 
-    - name: Checkout STAC Repo
-      uses: actions/checkout@v2
-
     - name: Build Website
       run: |
-        npm run build -- --CATALOG_URL=${{env.CATALOG_URL}} --TILE_SOURCE_TEMPLATE=${{env.TILE_SOURCE_TEMPLATE}}
+        npm run build -- --CATALOG_URL="${{env.CATALOG_URL}}" --TILE_SOURCE_TEMPLATE="${{env.TILE_SOURCE_TEMPLATE}}"
 
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3

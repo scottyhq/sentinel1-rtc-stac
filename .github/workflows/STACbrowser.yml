@@ -26,7 +26,8 @@ jobs:
       run: |
         npm run build -- --CATALOG_URL="${{ env.CATALOG_URL }}" \
         --TILE_SOURCE_TEMPLATE="${{ env.TILE_SOURCE_TEMPLATE }}" \
-        --PATH_PREFIX="${{ env.PATH_PREFIX }}"
+        --PATH_PREFIX="${{ env.PATH_PREFIX }}" \
+        --HISTORY_MODE=hash
 
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3

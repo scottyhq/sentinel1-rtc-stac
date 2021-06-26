@@ -1,32 +1,34 @@
 {
-    "id": "2020",
-    "stac_version": "1.0.0-beta.2",
-    "description": "Catalog of items from 19TCH with year of 2020",
-    "links": [
-        {
-            "rel": "root",
-            "href": "../../collection.json",
-            "type": "application/json"
-        },
-        {
-            "rel": "item",
-            "href": "./S1A_20200104_19TCH_ASC/S1A_20200104_19TCH_ASC.json",
-            "type": "application/json"
-        },
-        {
-            "rel": "item",
-            "href": "./S1A_20200111_19TCH_ASC/S1A_20200111_19TCH_ASC.json",
-            "type": "application/json"
-        },
-        {
-            "rel": "item",
-            "href": "./S1A_20200116_19TCH_ASC/S1A_20200116_19TCH_ASC.json",
-            "type": "application/json"
-        },
-        {
-            "rel": "parent",
-            "href": "../catalog.json",
-            "type": "application/json"
-        }
-    ]
+  "type": "Catalog",
+  "id": "2020",
+  "stac_version": "1.0.0",
+  "description": "Catalog of items from 19TCH with year of 2020",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./S1A_20200104_19TCH_ASC/S1A_20200104_19TCH_ASC.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./S1A_20200111_19TCH_ASC/S1A_20200111_19TCH_ASC.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./S1A_20200116_19TCH_ASC/S1A_20200116_19TCH_ASC.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "stac_extensions": []
 }

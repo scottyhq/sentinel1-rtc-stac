@@ -1,32 +1,34 @@
 {
-    "id": "2018",
-    "stac_version": "1.0.0-beta.2",
-    "description": "Catalog of items from 13SBD with year of 2018",
-    "links": [
-        {
-            "rel": "root",
-            "href": "../../collection.json",
-            "type": "application/json"
-        },
-        {
-            "rel": "item",
-            "href": "./S1B_20180103_13SBD_ASC/S1B_20180103_13SBD_ASC.json",
-            "type": "application/json"
-        },
-        {
-            "rel": "item",
-            "href": "./S1B_20180110_13SBD_ASC/S1B_20180110_13SBD_ASC.json",
-            "type": "application/json"
-        },
-        {
-            "rel": "item",
-            "href": "./S1B_20180115_13SBD_ASC/S1B_20180115_13SBD_ASC.json",
-            "type": "application/json"
-        },
-        {
-            "rel": "parent",
-            "href": "../catalog.json",
-            "type": "application/json"
-        }
-    ]
+  "type": "Catalog",
+  "id": "2018",
+  "stac_version": "1.0.0",
+  "description": "Catalog of items from 13SBD with year of 2018",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./S1B_20180103_13SBD_ASC/S1B_20180103_13SBD_ASC.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./S1B_20180110_13SBD_ASC/S1B_20180110_13SBD_ASC.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./S1B_20180115_13SBD_ASC/S1B_20180115_13SBD_ASC.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "stac_extensions": []
 }
